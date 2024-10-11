@@ -45,7 +45,7 @@ router.post("/new", (req, res) => {
     }
   });
 
-  messages.push({ text: userMessage, user: userMessage, added: new Date() });
+  messages.push({ text: userMessage, user: userName, added: new Date() });
 
   res.redirect("/");
 });
