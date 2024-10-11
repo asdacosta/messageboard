@@ -77,4 +77,7 @@ app.get("/:userName", (req, res, next) => {
 
 app.use("/", router);
 
-app.listen(8080);
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Port ${PORT} ongoing.`);
+});
