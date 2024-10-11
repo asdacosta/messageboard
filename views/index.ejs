@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Message Board</title>
+  </head>
+  <body>
+    <h1>Message Board</h1>
+    <button class="add"><a href="/new">Add Message</a></button>
+    <section class="box">
+      <% messages.forEach((message) => { %>
+      <section>
+        <span><%= message.user %></span>
+        <span><%= message.text %></span>
+        <span><%= message.added.toDateString() %></span>
+        <button><a href="/<%= message.user %>">Open</a></button>
+      </section>
+      <% }); %>
+    </section>
+  </body>
+</html>
