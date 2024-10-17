@@ -9,10 +9,10 @@
     <section class="box">
       <% messages.forEach((message) => { %>
       <section>
-        <span><%= message.user %></span>
-        <span><%= message.text %></span>
-        <span><%= message.added.toDateString() %></span>
-        <button><a href="/<%= message.user %>">Open</a></button>
+        <span><%= message.username %></span>
+        <span><%= message.message %></span>
+        <span><%= message.date.toDateString() %></span>
+        <button><a href="/<%= message.username %>">Open</a></button>
       </section>
       <% }); %>
     </section>
