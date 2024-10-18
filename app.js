@@ -23,7 +23,7 @@ app.get("/:userName", control.searchMessage);
 
 app.use("/", router);
 
-const PORT = process.env.DB_PORT || 8080;
+const PORT = process.env.DB_PORT || 8000;
 app.listen(PORT, () => {
   console.log(`Port ${PORT} ongoing.`);
 });
