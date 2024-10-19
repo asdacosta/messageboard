@@ -8,6 +8,8 @@ async function renderMessages(req, res) {
 async function postMessage(req, res) {
   const userName = req.body.name;
   const userMessage = req.body.message;
+  const date = new Date();
+  const formattedDate = date.toDateString();
   const messages = await db.getAllMessages();
 
   if (userName === "" || userMessage === "") {
@@ -19,7 +21,7 @@ async function postMessage(req, res) {
     }
   }
 
-  await db.insertMessage(userName, userMessage);
+  await db.insertMessage(userName, userMessage, formattedDate);
   res.redirect("/");
 }
 
