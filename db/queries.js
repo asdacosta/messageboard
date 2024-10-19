@@ -5,11 +5,11 @@ async function getAllMessages() {
   return rows;
 }
 
-async function insertMessage(username, message) {
-  await pool.query("INSERT INTO messages (username, message) VALUES ($1, $2)", [
-    username,
-    message,
-  ]);
+async function insertMessage(username, message, date) {
+  await pool.query(
+    "INSERT INTO messages (username, message, date) VALUES ($1, $2, $3)",
+    [username, message, date]
+  );
 }
 
 async function searchUsername(searchValue) {
