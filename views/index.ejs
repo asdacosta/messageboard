@@ -11,7 +11,10 @@
       <section>
         <span><%= message.username %></span>
         <span><%= message.message %></span>
-        <span><%= message.date.toDateString() %></span>
+        <span
+          ><%= message.date? message.date.toDateString(): 'No date available'
+          %></span
+        >
         <button><a href="/<%= message.username %>">Open</a></button>
       </section>
       <% }); %>

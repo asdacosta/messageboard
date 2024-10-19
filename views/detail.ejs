@@ -8,7 +8,7 @@
     <section class="details">
       <span>Username: <%= userName %></span>
       <span>Message: <%= userMessage %></span>
-      <span>Date: <%= date.toDateString() %></span>
+      <span>Date: <%= date? date.toDateString(): 'No date available' %></span>
       <button><a href="/">Back</a></button>
     </section>
   </body>
