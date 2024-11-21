@@ -16,7 +16,7 @@ async function postMessage(req, res) {
     return res.render("form", { feedback: "Please fill in all fields!" });
   }
   for (let message of messages) {
-    if (userName === message.usernmae) {
+    if (userName === message.username) {
       return res.render("form", { feedback: "Username already in use." });
     }
   }
