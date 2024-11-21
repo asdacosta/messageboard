@@ -1,29 +1,44 @@
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles.css" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>New | Message Board</title>
   </head>
   <body>
-    <h1>New Message</h1>
-    <form method="POST" action="/new">
-      <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" />
-      </div>
-      <div>
-        <label for="message">Message</label>
-        <textarea
-          type="text"
-          id="message"
-          name="message"
-          rows="4"
-          cols="40"
-        ></textarea>
-      </div>
-      <p><%= feedback %></p>
-      <button>Submit</button>
-      <button type="button"><a href="/">Back</a></button>
-    </form>
+    <main>
+      <section class="header">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+          />
+        </svg>
+        <h1>New Message</h1>
+      </section>
+      <form method="POST" action="/new">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea
+            type="text"
+            id="message"
+            name="message"
+            rows="4"
+            cols="40"
+          ></textarea>
+        </div>
+        <p><%= feedback %></p>
+        <button class="formButton">Submit</button>
+        <a href="/" class="formButton">Back</a>
+      </form>
+    </main>
   </body>
 </html>
