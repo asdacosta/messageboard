@@ -19,9 +19,8 @@
     <!-- <h4><a href="https://asdacosta.github.io/###/">Live Preview</a></h4> -->
 </div>
 
-**Demo:**
+<!-- **Demo:** -->
 
-<img src="./readme-assets/folder.png" alt="folder">
 <!-- ![Live Demo](./readme-assets/) -->
 
 <details>
@@ -30,17 +29,17 @@
 
 **Desktop View:**
 
-<!-- <img src="./readme-assets/desktop.png" alt="desktop view"> -->
+<img src="./readme-assets/desktop.jpg" alt="desktop view">
 <br>
 
 **Tablet View:**
 
-<!-- <img src="./readme-assets/tablet.png" alt="desktop view"> -->
+<img src="./readme-assets/tablet.jpg" alt="desktop view">
 <br>
 
 **Mobile View:**
 
-<img src="./readme-assets/mobile.png" alt="desktop view">
+<img src="./readme-assets/mobile.jpg" alt="desktop view">
 
 </details>
 
